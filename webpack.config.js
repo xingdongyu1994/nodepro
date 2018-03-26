@@ -23,7 +23,7 @@ module.exports = {
   plugins: [
     new HtmlwebpackPlugin({
       title: 'nodepro',
-      filename: 'index.html'
+      filename: './index.html'
     }),
   ]
  

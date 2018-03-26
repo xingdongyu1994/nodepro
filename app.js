@@ -35,6 +35,9 @@ app.use(express.static(path.join(__dirname, 'public')));
   }));
 })();
 
+const publicPath = express.static(path.join(__dirname, '../public'));
+
+app.use('/public', publicPath)
 
 // app.use('/', indexRouter);
 app.use('/',function(req, res){
