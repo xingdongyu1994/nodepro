@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'public'),
     filename: '[name].js',
-    publicPath: './public'
+    publicPath: '/'
   },
   //加载器
   module: {
@@ -25,6 +25,17 @@ module.exports = {
       title: 'nodepro',
       filename: './index.html'
     }),
-  ]
+  ],
+  //
+  devServer: {
+    contentBase: path.join(__dirname, "public"),
+    port: 1111,
+
+    inline: true,
+    historyApiFallback: true,
+
+    colors: true,
+    stats: 'normal',
+  },
  
 }
