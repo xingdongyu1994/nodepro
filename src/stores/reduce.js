@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
-import globalinfo from '../globalmodules/index'
+// import globalinfo from '../globalmodules/index'
+import mypageinfo from '../routers/Mypage/modules/index'
 
-export const makeRootReducer = asyncReducers => {
+export const makeRootReducer = ()=> {
   return combineReducers({
-    globalinfo,
-    ...asyncReducers,
+    mypageinfo,
   })
 }
 export default makeRootReducer

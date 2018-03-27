@@ -1,5 +1,4 @@
 import React from 'react'
-import { axiosAPI } from '../utils/request'
 import { Layout, Menu, Breadcrumb, Icon } from 'antd'
 import { connect } from 'react-redux'
 import Top from '../components/Top'
@@ -13,11 +12,7 @@ class Layouts extends React.Component {
      
     }
   }
-  componentDidMount(){
-    axiosAPI('getMyPage').then(function(res){
-      console.log("老会计很规范等111111111111111",res)
-    })
-  }
+  
   render () {
     
     return (

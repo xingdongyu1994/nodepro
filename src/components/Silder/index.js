@@ -8,10 +8,10 @@ class Silder extends React.Component {
   render () {
    
     return (
-      <div>
-         <Link to={'/mypage'}>导航</Link>
-         <Link to={'/mycode'}>代码</Link>
-      </div>
+      <ul>
+         <li><Link to={'/mypage'}>导航</Link></li>
+         <li><Link to={'/mycode'}>代码</Link></li>
+      </ul>
     )
   }
 }

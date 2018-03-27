@@ -1,7 +1,7 @@
 import axios from 'axios'
 const serveurl = 'http://localhost:1111'
 const map = {
-  getMyPage: {
+  getMyPageInfo: {
     url: `${serveurl}/mypage`,
     method: 'GET',
   },
