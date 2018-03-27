@@ -13,29 +13,21 @@ module.exports = {
   //加载器
   module: {
     loaders: [
-        { test: /\.less$/, loader: 'style!css!less' },
         { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
         { test: /\.(gif|jpg|png)$/, loader: 'url?limit=8192&name=images/[name].[hash].[ext]' },
-        { test: /\.(woff|svg|eot|ttf)$/, loader: 'url?limit=50000&name=fonts/[name].[hash].[ext]' }
+        { test: /\.(woff|svg|eot|ttf)$/, loader: 'url?limit=50000&name=fonts/[name].[hash].[ext]' },
+        { test: /\.css$/, loader: "style-loader!css-loader" },
     ]
   },  
    //插件
   plugins: [
     new HtmlwebpackPlugin({
       title: 'nodepro',
-      filename: './index.html'
+      filename: './index.html',
+      template: './index.html'
     }),
   ],
   //
-  devServer: {
-    contentBase: path.join(__dirname, "public"),
-    port: 1111,
-
-    inline: true,
-    historyApiFallback: true,
-
-    colors: true,
-    stats: 'normal',
-  },
+ 
  
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www",
-    "dev": "webpack-dev-server --devtool eval --progress --colors --port 1111",
+    "dev": "webpack-dev-server --devtool eval --progress --colors",
     "build": "webpack"
   },
   "repository": {
@@ -30,6 +30,7 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "immutable": "^3.8.1",
+    "lodash": "^4.17.5",
     "morgan": "~1.9.0",
     "mysql": "^2.15.0",
     "react": "^15.4.1",
@@ -41,6 +42,7 @@
     "redux": "^3.6.0",
     "redux-immutablejs": "0.0.8",
     "redux-logger": "^2.7.4",
+    "redux-saga": "^0.16.0",
     "webpack-hot-middleware": "^2.21.2"
   },
   "devDependencies": {
