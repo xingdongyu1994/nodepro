@@ -1,6 +1,6 @@
 import React from 'react'
 import { Icon, Dropdown, Avatar, Menu } from 'antd'
-
+import { Link } from 'react-router'
 class Silder extends React.Component {
   componentDidMount() {
 
@@ -9,7 +9,7 @@ class Silder extends React.Component {
    
     return (
       <div>
-         导航
+         <Link to={'/mypage'}>导航</Link>
       </div>
     )
   }
