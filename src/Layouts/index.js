@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, Menu, Breadcrumb, Icon } from 'antd'
+import { Flex, WhiteSpace } from 'antd-mobile'
 import { connect } from 'react-redux'
 import Top from '../components/Top'
 import Silder from '../components/Silder'
@@ -20,14 +20,14 @@ class Layouts extends React.Component {
          <div className="my-container-top">
             <Top />
          </div>
-         <div className="my-container-main">
+         {/* <div className="my-container-main">
             <div className="my-container-silder">
               <Silder />
             </div>
             <div className="my-container-content">
               {this.props.children}
             </div>
-         </div>
+         </div> */}
       </div>
     )
   }

@@ -4,11 +4,11 @@
   height: 100%;
 }
 .my-container-top {
-  width: 100%;
+  /* width: 100%;
   height: 40px;
   line-height: 40px;
   background: darkgrey;
-  color: #fff;
+  color: #fff; */
 }
 .my-container-main {
   display: flex;
