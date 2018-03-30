@@ -1,0 +1,14 @@
+.login-form .ant-row.ant-form-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.login-main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.login-form {
+  width: 100%
+}

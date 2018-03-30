@@ -1,6 +1,16 @@
 import axios from 'axios'
 const serveurl = 'http://localhost:1111'
 const map = {
+  //登录验证
+  getGlobalLogin: {
+    url: `${serveurl}/globallogin`,
+    method: 'GET',
+  },
+  //登录用户名
+  getGlobalUser: {
+    url: `${serveurl}/loginuser`,
+    method: 'POST',
+  },
   getMyPageInfo: {
     url: `${serveurl}/mypage`,
     method: 'GET',

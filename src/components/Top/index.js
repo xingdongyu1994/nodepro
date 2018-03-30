@@ -2,6 +2,7 @@ import React from 'react'
 import { Menu, Icon, NavBar, ActivityIndicator } from 'antd-mobile'
 import TopMenu from './TopMenu'
 import './index.css'
+import 'antd-mobile/dist/antd-mobile.css'
 class Top extends React.Component {
   constructor () {
     super()
@@ -38,7 +39,22 @@ class Top extends React.Component {
     //   }, 500);
     // }
   }
-  
+  onChange(value){
+    // let label = '';
+    // data.forEach((dataItem) => {
+    //   if (dataItem.value === value[0]) {
+    //     label = dataItem.label;
+    //     if (dataItem.children && value[1]) {
+    //       dataItem.children.forEach((cItem) => {
+    //         if (cItem.value === value[1]) {
+    //           label += ` ${cItem.label}`;
+    //         }
+    //       });
+    //     }
+    //   }
+    // });
+    console.log("选中",value)
+  }
   render () {
     const { initData, show } = this.state
     return (
@@ -46,7 +62,7 @@ class Top extends React.Component {
         <NavBar
           leftContent="Menu"
           mode="light"
-          icon={<img src="https://gw.alipayobjects.com/zos/rmsportal/iXVHARNNlmdCGnwWxQPH.svg" className="am-icon am-icon-md" alt="" />}
+         
           onLeftClick={this.handClick.bind(this)}
           className="single-top-nav-bar"
         ></NavBar>
@@ -59,8 +75,7 @@ class Top extends React.Component {
                 data={initData}
                 value={['1']}
                 level={1}
-              
-                height={document.documentElement.clientHeight * 0.6}
+                onChange={this.onChange.bind(this)}     
               />
             :
              ""

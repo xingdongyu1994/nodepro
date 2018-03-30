@@ -10,8 +10,8 @@
 
 .single-top-nav-bar {
   position: relative;
-  background-color: #008AE6;
-  color: #FFF;
+  background-color: #008AE6 !important;
+  color: #FFF !important;
 }
 .am-navbar-title {
   color: #FFF!important;
@@ -24,8 +24,4 @@
   background-color: #000;
   opacity: 0.4;
   z-index: 89;
-}
-.am-navbar-left {
-  display: flex;
-  align-items: center
 }

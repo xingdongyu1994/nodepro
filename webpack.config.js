@@ -13,7 +13,7 @@ module.exports = {
   //加载器
   module: {
     loaders: [
-        { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' },
+        { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
         { test: /\.(gif|jpg|png)$/, loader: 'url?limit=8192&name=images/[name].[hash].[ext]' },
         { test: /\.(woff|svg|eot|ttf)$/, loader: 'url?limit=50000&name=fonts/[name].[hash].[ext]' },
         { test: /\.css$/, loader: "style-loader!css-loader" },

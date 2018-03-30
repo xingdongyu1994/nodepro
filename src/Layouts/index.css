@@ -1,6 +1,6 @@
 
 .my-container {
-  border: 1px solid;
+
   height: 100%;
 }
 .my-container-top {
@@ -28,4 +28,7 @@
   float: left;
   background: #ccc;
   width: 100%
+}
+.my-container-login {
+  height: 100%;
 }
