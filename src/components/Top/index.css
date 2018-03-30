@@ -25,3 +25,14 @@
   opacity: 0.4;
   z-index: 89;
 }
+.top-showmenu {
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  width: 100%;
+  background: #ccc;
+}
+.top-showmenu li {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+}

@@ -11,21 +11,10 @@
   color: #fff; */
 }
 .my-container-main {
-  display: flex;
-  height: 100%;
-}
-.my-container-silder {
-  width: 200px;
-  float: left;
-  color: #fff;
-  height: 100%;
-  margin-bottom: -3000px;
-  padding-bottom: 3000px;
-  background: #001529;
-  overflow: hidden;
+  /* display: flex;
+  height: 100%; */
 }
 .my-container-content {
-  float: left;
   background: #ccc;
   width: 100%
 }

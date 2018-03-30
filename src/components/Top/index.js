@@ -1,6 +1,7 @@
 import React from 'react'
 import { Menu, Icon, NavBar, ActivityIndicator } from 'antd-mobile'
-import TopMenu from './TopMenu'
+import { Link } from 'react-router'
+
 import './index.css'
 import 'antd-mobile/dist/antd-mobile.css'
 class Top extends React.Component {
@@ -18,7 +19,6 @@ class Top extends React.Component {
         {
           value: '3',
           label: 'Extra',
-          isLeaf: true,
         },
       ],
       show: false,
@@ -39,8 +39,9 @@ class Top extends React.Component {
     //   }, 500);
     // }
   }
-  onChange(value){
+  handChange =(value)=>{
     // let label = '';
+    const {data}  =this.state
     // data.forEach((dataItem) => {
     //   if (dataItem.value === value[0]) {
     //     label = dataItem.label;
@@ -53,6 +54,7 @@ class Top extends React.Component {
     //     }
     //   }
     // });
+    // this.props.history.pushState({passParam: true}, "/targetURL"); 
     console.log("选中",value)
   }
   render () {
@@ -62,25 +64,20 @@ class Top extends React.Component {
         <NavBar
           leftContent="Menu"
           mode="light"
-         
           onLeftClick={this.handClick.bind(this)}
           className="single-top-nav-bar"
         ></NavBar>
         <div>
-        
           {
             show?
-              <Menu
-                className="single-foo-menu"
-                data={initData}
-                value={['1']}
-                level={1}
-                onChange={this.onChange.bind(this)}     
-              />
+              <div className="top-showmenu">
+                <ul>
+                  <li><Link  to={'mypage'}><span>我的主页</span></Link></li>
+                </ul>
+              </div>
             :
              ""
           }
-          
         </div>
       </div>
     )

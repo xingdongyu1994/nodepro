@@ -60,8 +60,13 @@ class Layouts extends React.Component {
               <Login LoginHand ={this.LoginHand}/>
             </div>
            : 
-            <div className="my-container-top">
-              <Top />
+            <div className="my-container-main">
+              <div className="my-container-top">
+                <Top />
+              </div>
+              <div className="my-container-content">
+                {this.props.children}
+              </div>
             </div>
          }
          {/* <div className="my-container-top">
