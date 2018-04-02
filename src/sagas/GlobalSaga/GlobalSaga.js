@@ -5,7 +5,6 @@ import * as GlobalApi from '../../utils/GlobalApi'
 export function* axiosGlobalLogin(action) {
   try {
     const mylogin  =yield call(GlobalApi.GlobalLogin)
-    console.log("破壳ijuhygfds",mylogin)
     // if(mylogin.data == 'nologin') {
       action.isCallback(mylogin.data)
     // }

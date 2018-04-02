@@ -1,0 +1,23 @@
+.mypage-title {
+  height: '50px';
+  color: '#888';
+  font-size: 18;
+  border-bottom: '1px solid #F6F6F6';
+}
+.mypage-content {
+  display: flex;
+  padding: 15px 0
+}
+.mypage-content-des {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+.mypage-content-price {
+  font-size: 30;
+  color: #FF6E27;
+}
+.mypage-img {
+  height: 64px;
+  /* margin-right: 15px; */
+  width: 64px;
+}

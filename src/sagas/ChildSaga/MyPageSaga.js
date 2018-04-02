@@ -8,11 +8,15 @@ export function* axiosMyPageList(action) {
   try {
     const mypage  =yield call(MyPageApi.MyPageGetInfo)
     console.log("破壳ijuhygfds",mypage)
+    yield put({
+      type:'MYPAGELISTDATA',
+      payload:mypage.data
+    })
   } catch (e) {
   }
 }
 export default function* MyPageSaga() {
   yield [
-    takeEvery('MYPAGE', axiosMyPageList),
+    takeEvery('MYPAGELIST', axiosMyPageList),
   ]
 }
